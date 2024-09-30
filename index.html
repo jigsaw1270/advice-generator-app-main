@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+    :root {
+  --light-cyan: #a2e1e7;
+  --neon-green: #00ff9c;
+  --grayish-blue: #4e5d73;
+  --dark-grayish-blue: #323a49;
+  --dark-blue: #1c2232;
+}
+    body,html{
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--dark-blue);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <div class="card bg-[var(--dark-grayish-blue)] hover:scale-125 delay-75 text-neutral-content w-full lg:w-[30vw]  antialiased relative">
+    <div class="card-body items-center text-center sm:min-h-[40vw] lg:min-h-[20vw] justify-center">
+   <small class="text-xs text-[var(--neon-green)] uppercase tracking-widest font-semibold py-4" id="advice-count"></small>
+   <h1 id="advice-text" class="font-bold text-3xl mb-6">Help yourself</h1>
+   <img src="./images/pattern-divider-desktop.svg" class="mb-8" alt="">
+   <div role="button" onclick="getAdvice()" class="btn hover:bg-[var(--light-cyan)] w-16 h-16 rounded-full bg-[var(--neon-green)] flex  items-center justify-center absolute -bottom-8"><img src="./images/icon-dice.svg" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
